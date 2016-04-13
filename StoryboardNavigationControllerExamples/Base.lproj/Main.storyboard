@@ -1,25 +1,130 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jN8-2t-Iaj">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Main View Controller-->
+        <scene sceneID="se0-jo-cb0">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gIU-Jb-v7X" customClass="MainViewController" customModule="StoryboardNavigationControllerExamples" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="xzb-h3-2H7"/>
+                        <viewControllerLayoutGuide type="bottom" id="0BK-cw-Teu"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="fEx-Gf-rT2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap add  in the navigation bar to simulate working with a modal add screen" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFD-5w-F3y">
+                                <rect key="frame" x="127" y="268" width="346" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="rxG-GR-Q8s"/>
+                                    <constraint firstAttribute="width" constant="346" id="wAt-am-uwz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QFD-5w-F3y" firstAttribute="centerY" secondItem="fEx-Gf-rT2" secondAttribute="centerY" id="BmS-kC-Dlh"/>
+                            <constraint firstItem="QFD-5w-F3y" firstAttribute="centerX" secondItem="fEx-Gf-rT2" secondAttribute="centerX" id="uB4-1H-1hh"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="qDH-Zx-EdZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xFs-11-boJ">
+                            <connections>
+                                <segue destination="KZt-Pk-QMu" kind="presentation" id="7gM-5b-RMK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fpi-Fw-Kif" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1173" y="435"/>
+        </scene>
+        <!--Add Screen-->
+        <scene sceneID="FqD-n2-YmL">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VhW-cu-Q81" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="ykT-ed-Vjy" customClass="AddScreenViewController" customModule="StoryboardNavigationControllerExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iRp-Ps-O5u"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKO-HK-V7Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i6d-K6-Ssq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter something and press Save" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Njq-HR-SgT">
+                                <rect key="frame" x="156" y="285" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="PFP-lb-8QY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Njq-HR-SgT" firstAttribute="centerX" secondItem="i6d-K6-Ssq" secondAttribute="centerX" id="PAe-NU-bJp"/>
+                            <constraint firstItem="Njq-HR-SgT" firstAttribute="centerY" secondItem="i6d-K6-Ssq" secondAttribute="centerY" id="ZQ9-Tk-AcG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Screen" id="zM3-Fv-cd9">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="hj7-mf-YdV">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="ykT-ed-Vjy" id="Mif-Gz-mq6"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="P4A-Jp-SMs">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="ykT-ed-Vjy" id="e9T-AZ-asN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2558" y="435"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tyW-yB-k7J">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jN8-2t-Iaj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CeR-Eo-2Jd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gIU-Jb-v7X" kind="relationship" relationship="rootViewController" id="Pmz-57-yNB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XTQ-CR-giB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486" y="435"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FvF-TW-EbI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KZt-Pk-QMu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="I6p-ux-UPa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ykT-ed-Vjy" kind="relationship" relationship="rootViewController" id="e8l-x3-PNV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mrj-zo-daf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1903" y="435"/>
         </scene>
     </scenes>
 </document>

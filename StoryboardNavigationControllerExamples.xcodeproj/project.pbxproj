@@ -12,6 +12,7 @@
 		C3F3A4841CBEB7C800B35A27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F3A4821CBEB7C800B35A27 /* Main.storyboard */; };
 		C3F3A4861CBEB7C800B35A27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F3A4851CBEB7C800B35A27 /* Assets.xcassets */; };
 		C3F3A4891CBEB7C800B35A27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F3A4871CBEB7C800B35A27 /* LaunchScreen.storyboard */; };
+		C3F3A4911CBEB80400B35A27 /* AddScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F3A4901CBEB80400B35A27 /* AddScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C3F3A4851CBEB7C800B35A27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3F3A4881CBEB7C800B35A27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3F3A48A1CBEB7C800B35A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3F3A4901CBEB80400B35A27 /* AddScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				C3F3A47E1CBEB7C800B35A27 /* AppDelegate.swift */,
 				C3F3A4801CBEB7C800B35A27 /* ViewController.swift */,
+				C3F3A4901CBEB80400B35A27 /* AddScreenViewController.swift */,
 				C3F3A4821CBEB7C800B35A27 /* Main.storyboard */,
 				C3F3A4851CBEB7C800B35A27 /* Assets.xcassets */,
 				C3F3A4871CBEB7C800B35A27 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				C3F3A4811CBEB7C800B35A27 /* ViewController.swift in Sources */,
 				C3F3A47F1CBEB7C800B35A27 /* AppDelegate.swift in Sources */,
+				C3F3A4911CBEB80400B35A27 /* AddScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
