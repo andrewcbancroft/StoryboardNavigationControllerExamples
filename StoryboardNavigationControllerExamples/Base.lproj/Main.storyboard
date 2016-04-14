@@ -49,7 +49,6 @@
         <!--Add Screen-->
         <scene sceneID="FqD-n2-YmL">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VhW-cu-Q81" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="ykT-ed-Vjy" customClass="AddScreenViewController" customModule="StoryboardNavigationControllerExamples" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iRp-Ps-O5u"/>
@@ -87,6 +86,7 @@
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VhW-cu-Q81" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2558" y="435"/>
         </scene>
