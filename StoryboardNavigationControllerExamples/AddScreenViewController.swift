@@ -32,13 +32,13 @@ class AddScreenViewController: UIViewController {
     }
     */
     
-    @IBAction func cancelButtonTapped(sender: UIBarButtonItem) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     
-    @IBAction func saveButtonTapped(sender: UIBarButtonItem) {
+    @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
         // save something
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
 }
